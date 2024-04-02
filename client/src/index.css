@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  margin: 1rem;
+}
+
+section {
+  border: 2px solid #333;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 2rem;
+  border-radius: 20px;
+  margin: 0 auto;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+}
+
+section p {
+  font-size: 3rem;
+  color: #333;
+  font-weight: 600;
+  text-shadow: 2px 2px #333;
+  margin-bottom: 2rem;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  max-width: 100%;
+}
+
+section button {
+  background-color: transparent;
+  border: none;
+  max-width: 100%;
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.start {
+  background-color: rgb(29, 112, 29);
+}
+.start:hover {
+  background-color: rgb(105, 173, 105);
+}
+
+.stop {
+  background-color: rgb(216, 71, 71);
+}
+.stop:hover {
+  background-color: rgb(228, 116, 116);
+}
+
+.reset {
+  background-color: rgb(50, 50, 201);
+}
+
+.reset:hover {
+  background-color: rgb(117, 117, 243);
+}
+
+@media screen and (max-width: 400px) {
+  section {
+    padding: 1rem;
+
+    width: 100%;
+    margin: 0;
+  }
+
+  section button{
+    padding: 1rem;
+  }
+}
